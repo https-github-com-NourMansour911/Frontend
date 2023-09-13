@@ -201,7 +201,7 @@ section {
   }
 }
 #landing .container2 .landing-info span {
-  margin-left: 10px;
+  margin-left: 15px;
   color: var(--mainColor,#BB2525);
 }
 #landing .container2 .landing-photo {
@@ -272,7 +272,8 @@ color: var(--secondColor,#fff);
   text-align: left;
   margin-left: 10px;
 }
-#follow .container2 .cards article .follow-card-description h3 {
+#follow .container2 .cards article .follow-card-description h3 ,
+#journey .container2 .box-card .card2 h3 {
   font-size: 18px;
 }
 #follow .container2 .cards article .follow-card-description p {
@@ -294,7 +295,10 @@ color: var(--secondColor,#fff);
 #training {
   text-align: center;
 }
-#training .container2 h2 {
+#training .container2 h2 ,
+#training .container2 .training-box-card ,
+#journey .container2 h2 ,
+#journey .container2 .box-card {
   margin-bottom: 30px;
 }
 #training .container2 .training-box-card {
@@ -304,8 +308,8 @@ color: var(--secondColor,#fff);
 @media (min-width: 992px) {
   #training .container2 .training-box-card {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column width as needed */
-    grid-gap: 30px; /* Adjust the value for spacing between elements */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
   }
 }
 #training .container2 .training-box-card .card2 {
@@ -329,6 +333,70 @@ color: var(--secondColor,#fff);
   margin-bottom: 30px;
 }
 /* ####################### end training ####################### */
+/* ####################### start journey ####################### */
+#journey {
+  background-color: #000;
+  color: var(--secondColor,#FFF);
+  text-align: center;
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #journey .container2 .box-card {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#journey .container2 .box-card .card2 {
+  text-align: left;
+  border: 2px solid #202020;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  width: 250px;
+  position: relative;
+  padding: 15px 16px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #journey .container2 .box-card .card2 {
+    margin-bottom: 30px;
+  }
+}
+#journey .container2 .box-card .card2 .ribbon {
+  background-color: #BB2525;
+  position: relative;
+  top: -20px;
+  left: -15px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 3px 12px 3px 20px;
+}
+#journey .container2 .box-card .card2 .ribbon::before {
+  content: "";
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: -40%;
+  left: -20px;
+  -webkit-transform: rotate(-142deg);
+  -moz-transform: rotate(-142deg);
+  transform: rotate(-142deg);
+  background-color: #000;
+}
+#journey .container2 .box-card .card2 p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #B2B2B2;
+}
+/* ####################### end journey ####################### */
 /* ####################### start footer ####################### */
 footer {
   padding-top: 70px;
