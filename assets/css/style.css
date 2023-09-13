@@ -241,16 +241,27 @@ color: var(--secondColor,#fff);
 #follow .container2 .cards article img {
   max-width: 100%;
 }
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #follow .container2 .cards article > img {
+    margin-bottom: 30px;
+  }
+}
 #follow .container2 .cards article .follow-card-description {
   background-color: #D9D9D912;
   box-shadow: 0px 1px 3px 2px #52525212;
-  -webkit-border-radius: 17px;
-  -moz-border-radius: 17px;
-  border-radius: 17px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 5px;
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #follow .container2 .cards article .follow-card-description {
+    border-radius: 17px;
+  }
 }
 #follow .container2 .cards article .follow-card-description .text {
   text-align: left;
