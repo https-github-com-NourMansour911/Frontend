@@ -221,7 +221,7 @@ color: var(--secondColor,#fff);
 #follow .container2 h2 {
   text-align: center;
   font-weight: lighter;
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 /* Large devices (desktops, 992px and up) */
