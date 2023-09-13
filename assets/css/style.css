@@ -208,7 +208,9 @@ section {
   display: none;
   max-width: 550px;
 }
-#landing .container2 .landing-photo img {
+#landing .container2 .landing-photo img ,
+#follow .container2 .cards article img ,
+#top-rated .container2 .box-card article img {
   max-width: 100%;
 }
 /* Large devices (desktops, 992px and up) */
@@ -242,9 +244,6 @@ color: var(--secondColor,#fff);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-}
-#follow .container2 .cards article img {
-  max-width: 100%;
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -397,6 +396,67 @@ color: var(--secondColor,#fff);
   color: #B2B2B2;
 }
 /* ####################### end journey ####################### */
+/* ####################### start top-rated ####################### */
+#top-rated .container2 h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #top-rated .container2 h2 {
+    text-align: left;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #top-rated .container2 .box-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+#top-rated .container2 .box-card article {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #EFEFEF;
+  margin-bottom: 20px;
+  padding: 5px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+#top-rated .container2 .box-card article img {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+#top-rated .container2 .box-card article h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+#top-rated .container2 .box-card article small {
+  color: #BB2525;
+  font-size: 11px;
+  margin-bottom: 20px;
+  margin-bottom: 8px;
+  display: block;
+}
+#top-rated .container2 .box-card article .article-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #848484;
+  font-size: 11px;
+  font-weight: 600;
+}
+#top-rated .container2 .box-card article .rating {
+  color: #ffa700d6;
+  margin-right: 3px;
+}
+/* ####################### end top-rated ####################### */
 /* ####################### start footer ####################### */
 footer {
   padding-top: 70px;
