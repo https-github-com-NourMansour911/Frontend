@@ -13,10 +13,19 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,sans-serif;
+  font-family: 'Open Sans','Segoe UI', Tahoma, Geneva, Verdana, sans-serif,sans-serif;
 }
 a {
   text-decoration: none;
+}
+button {
+  background-color: var(--mainColor, #BB2525);
+  padding: 12px 18px;
+  border: none;
+  color: var(--secondColor, #fff);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 section {
   padding-top: 70px;
@@ -149,18 +158,61 @@ section {
   }
 }
 #header .container2 .part3 > button:first-child {
-  background-color: var(--mainColor, #BB2525);
-  padding: 12px 18px;
-  border: none;
-  color: var(--secondColor, #fff);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
   margin-right: 10px;
+}
+#header .container2 #nav-lan {
+  font-size: 9px;
 }
 #header .container2 div i {
   cursor: pointer;
   padding: 5px;
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #landing .container2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+}
+#landing .container2 .landing-info {
+  padding-top: 70px;
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #landing .container2 .landing-info {
+    padding-top: 0px;
+  }
+}
+#landing .container2 .landing-info h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+#landing .container2 .landing-info p {
+  margin-bottom: 20px;
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #landing .container2 .landing-info h1 {
+    font-size: 64px;
+  }
+}
+#landing .container2 .landing-info span {
+  margin-left: 10px;
+  color: var(--mainColor,#BB2525);
+}
+#landing .container2 .landing-photo {
+  display: none;
+  max-width: 550px;
+}
+#landing .container2 .landing-photo img {
+  max-width: 100%;
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #landing .container2 .landing-photo {
+    display: block;
+  }
 }
 footer {
   padding-top: 70px;
