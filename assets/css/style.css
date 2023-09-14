@@ -1,6 +1,9 @@
 :root {
-  --mainColor: #BB2525;
-  --secondColor: #fff;
+ --mainColor: #BB2525;
+ --secondColor: #fff;
+ --thirdColor: #000000B2;
+ --text-color:var(#8E8E8E);
+ --textSign-color:var(#848484);
 }
 * {
   margin: 0;
@@ -13,19 +16,10 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Open Sans','Segoe UI', Tahoma, Geneva, Verdana, sans-serif,sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,sans-serif;
 }
 a {
   text-decoration: none;
-}
-button {
-  background-color: var(--mainColor, #BB2525);
-  padding: 12px 18px;
-  border: none;
-  color: var(--secondColor, #fff);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
 }
 section {
   padding-top: 70px;
@@ -57,7 +51,6 @@ section {
     width: 1140px;
   }
 }
-/* ####################### start header ####################### */
 #header {
   width: 100%;
   position: absolute;
@@ -159,177 +152,19 @@ section {
   }
 }
 #header .container2 .part3 > button:first-child {
+  background-color: var(--mainColor, #BB2525);
+  padding: 12px 18px;
+  border: none;
+  color: var(--secondColor, #fff);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   margin-right: 10px;
-}
-#header .container2 #nav-lan {
-  font-size: 9px;
 }
 #header .container2 div i {
   cursor: pointer;
   padding: 5px;
 }
-/* ####################### end header ####################### */
-/* ####################### start landing ####################### */
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #landing .container2 {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-}
-}
-#landing .container2 .landing-info {
-  padding-top: 70px;
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #landing .container2 .landing-info {
-    padding-top: 0px;
-  }
-}
-#landing .container2 .landing-info h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-#landing .container2 .landing-info p {
-  margin-bottom: 20px;
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #landing .container2 .landing-info h1 {
-    font-size: 64px;
-  }
-}
-#landing .container2 .landing-info span {
-  margin-left: 10px;
-  color: var(--mainColor,#BB2525);
-}
-#landing .container2 .landing-photo {
-  display: none;
-  max-width: 550px;
-}
-#landing .container2 .landing-photo img {
-  max-width: 100%;
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #landing .container2 .landing-photo {
-    display: block;
-  }
-}
-/* ####################### end landing ####################### */
-/* ####################### start follow ####################### */
-#follow {
-background-color: #000000;
-color: var(--secondColor,#fff);
-}
-#follow .container2 h2 ,
-#training .container2 h2 {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #follow .container2 .cards {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-#follow .container2 .cards article {
-  text-align: center;
-  max-width: 315px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
-#follow .container2 .cards article img {
-  max-width: 100%;
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #follow .container2 .cards article > img {
-    margin-bottom: 30px;
-  }
-}
-#follow .container2 .cards article .follow-card-description {
-  background-color: #D9D9D912;
-  box-shadow: 0px 1px 3px 2px #52525212;
-  border-bottom-left-radius: 17px;
-  border-bottom-right-radius: 17px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 5px;
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #follow .container2 .cards article .follow-card-description {
-    border-radius: 17px;
-  }
-}
-#follow .container2 .cards article .follow-card-description .text {
-  text-align: left;
-  margin-left: 10px;
-}
-#follow .container2 .cards article .follow-card-description h3 {
-  font-size: 18px;
-}
-#follow .container2 .cards article .follow-card-description p {
-  font-size: 11px;
-  font-weight: 400;
-}
-#follow .container2 .cards article .follow-icon {
-  width: 130px;
-  padding: 13px 14px;
-  border: 1px solid #242424;
-  background-color: #242424;
-  -webkit-border-radius: 11px;
-  -moz-border-radius: 11px;
-  border-radius: 11px;
-}
-/* ####################### end follow ####################### */
-
-/* ####################### start training ####################### */
-#training {
-  text-align: center;
-}
-#training .container2 h2 {
-  margin-bottom: 30px;
-}
-#training .container2 .training-box-card {
-  text-align: left;
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #training .container2 .training-box-card {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column width as needed */
-    grid-gap: 30px; /* Adjust the value for spacing between elements */
-  }
-}
-#training .container2 .training-box-card .card2 {
-  margin-bottom: 25px;
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #training .container2 .training-box-card .card2 {
-    margin-bottom: 0px;
-  }
-}
-#training .container2 .training-box-card article {
-  background-color: #EFEFEF;
-  margin-top: 10px;
-  padding: 12px 16px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-}
-#training .container2 .training-box-card article h3 {
-  margin-bottom: 30px;
-}
-/* ####################### end training ####################### */
-/* ####################### start footer ####################### */
 footer {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -355,6 +190,48 @@ footer .container2 .contact-footer {
     margin: 0;
   }
 }
+
+.button-contain {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.custom-btn {
+  display: flex;
+  border: 0px solid white;
+  overflow: hidden;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--mainColor);
+  width: 374px;
+height: 41px;
+padding: 20px 8px 20px 8px;
+border-radius: 10px;
+gap: 8px;
+
+
+}
+
+
+.custom-btn span {
+  color: var(--secondColor);
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 1px;
+  text-align: left;
+ text-transform: capitalize;
+}
+
 footer .container2 span {
   display: block;
   color: #525C60;
@@ -404,4 +281,340 @@ footer .container2 .pages a {
 .copy .container2 p {
   margin-bottom: 0!important;
 }
-/* ####################### end footer ####################### */
+
+.contact-us .header{
+  background: url(../images/contact.png) no-repeat;
+  background-size: contain;
+  width:100%;
+  height:50vh;
+  
+}
+
+.contact-us h1{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.contact-us .form{
+  width: Hug (1,131px);
+height: Hug (571px);
+top: 745px;
+left: 394px;
+gap: 56px;
+text-align: center;
+justify-content: space-around;
+justify-items: center;
+align-content: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="phone number"],
+form textarea[type="text"]{
+    border: none;
+    border-bottom:1px  solid;
+    border-radius: 0%;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 10;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom:5px;
+    padding:0px, 122px, 1px, 122px;
+}
+
+form label[for="floatingName"],
+form label[for="floatingPhoneNumber"],
+form label[for="floatingEmail"],
+form label[for="floatingTextare"],
+form button[type="button"]{
+  text-transform: capitalize;
+}
+
+.payment .container{
+  display: flex;
+  justify-content:space-between;
+}
+
+.payment .container .card{
+  width: Fixed (585px);
+  height: 607px;
+  left: 48px;
+  padding: 24px;
+  border-radius: 8px ;
+  border: 3px solid var(--mainColor);
+  gap: 16px;
+  
+}
+
+.payment .container .card-body .card-title{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 24px;
+font-weight: 600;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--thirdColor);
+text-transform: capitalize;
+
+}
+
+.payment .container .card-body .card-text{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--thirdColor);
+}
+
+
+.payment .container .personal{
+ margin: 20px 0px  100px 0px ;
+ height: 800px;
+}
+
+.payment .container .personal .personal-info{
+  width: Hug (1,133px);
+height: Hug (292px);
+top: 230px;
+left: 741px;
+gap: 48px;
+
+}
+
+.payment .container .personal .personal-info h2{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 40px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.payment .container .personal .payment-methods{
+width: Hug (900px);
+height: Hug (460.2px);
+top: 594px;
+left: 741px;
+gap: 40px;
+}
+
+.sign-info{
+  width: Hug (588px);
+  height: Hug (699.92px);
+  top: 164.5px;
+ 
+  gap: 40px;
+  margin: 65px;
+}
+
+.sign-container{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+.sign-container .img{
+  background: url("../images/sign.png") no-repeat;
+  background-size: contain;
+  width: 50%;
+  height: 90vh;
+}
+
+.sign-container input{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+width: fixed(588px);
+
+}
+.sign-container label{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #848484;
+  
+}
+
+.form-floating .form-select {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: center;
+text-transform: capitalize;
+color:#848484;
+}
+
+.custom-btn
+{
+  text-decoration:none;
+  
+}
+.button-contain
+{
+  width:350px;
+  font-size: 15px;
+  box-shadow: 4px 4px 9px 0px #00000040;
+box-shadow: 4px 4px 13px 0px #FFFFFF40 inset;
+
+
+}
+.button-containt img
+{
+  width: 20px;
+}
+ 
+ a{
+  font-family: Open Sans;
+font-size: 15px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: center;
+color: var(--textSign-color);
+
+}
+
+span a
+{
+  text-decoration: none;
+  text-transform: capitalize;
+  color:var(--mainColor);
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 12px;
+letter-spacing: 0em;
+text-align:center;
+color: var(--textSign-color);
+
+}
+
+.work-out{
+  width: 100%;
+  height: 100%;
+}
+
+.work-out .header-work-out{
+  background: url(../images/work\ out.png) no-repeat;
+  background-size:contain;
+ width: 100%;
+ height: 535px;
+ 
+}
+
+.work-out .workOut-content{
+  display:flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.work-out .workOut-content .container-work{
+  display:flex;
+  border-radius: 16px;
+  border: 1px solid var(--mainColor);
+  gap: 42px;
+  width: Hug (1,097px);
+  height: Hug (232px);
+  top: 754px;
+  left: 411px;
+  padding: 24px;
+}
+
+.work-out .workOut-content .container-work span{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 48px;
+font-weight: 600;
+line-height: 60px;
+letter-spacing: 0em;
+text-align: center;
+color: var(--mainColor);
+display: block;
+}
+
+.work-out .workOut-content .container-work h1{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 48px;
+font-weight: 600;
+line-height: 60px;
+letter-spacing: 0em;
+text-align: center;
+padding: 10px;
+}
+
+.work-out .workOut-content .container-work .Experience{
+border-left: 1px solid var(--mainColor);
+Padding :12px, 24px, 12px, 24px;
+
+}
+.work-out .workOut-content .container-work .ActiveClients{
+border-left: 1px solid var(--mainColor);
+Padding :12px, 24px, 12px, 24px;
+}
+
+.work-out .workOut-content a{
+  width: 92px;
+height: 92px;
+background-color: var(--mainColor);
+border-radius: 50%;
+}
+
+.work-out .workOut-content a img{
+  width: 45.5px;
+height: 38.5px;
+top: 29px;
+}
+
+.work-out .DescriptionAboutMe{
+  width: Hug (1,732px);
+height: Hug (308px);
+margin-top: 50px;
+}
+
+.work-out .DescriptionAboutMe h2{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 30px;
+font-weight: 600;
+line-height: 52px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.work-out .DescriptionAboutMe p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 29px;
+font-weight: 400;
+line-height: 42px;
+text-align: left;
+color: var(--textSign-color);
+}
+
+.work-out .DescriptionAboutMe a span{
+  color: var(--mainColor); 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: left;
+}
