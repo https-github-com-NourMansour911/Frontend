@@ -827,7 +827,7 @@ box-shadow: 4px 4px 13px 0px #FFFFFF40 inset;
   width: 20px;
 }
  
- a{
+ /* a{
   font-family: Open Sans;
 font-size: 15px;
 font-weight: 400;
@@ -836,9 +836,9 @@ letter-spacing: 0em;
 text-align: center;
 color: var(--textSign-color);
 
-}
+} */
 
-span a
+/* span a
 {
   text-decoration: none;
   text-transform: capitalize;
@@ -856,7 +856,7 @@ letter-spacing: 0em;
 text-align:center;
 color: var(--textSign-color);
 
-}
+} */
 
 .work-out{
   width: 100%;
