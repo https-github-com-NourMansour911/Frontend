@@ -547,9 +547,10 @@ footer {
   border-top: 1px solid var(--mainColor);
   border-bottom: 1px solid var(--mainColor);
 }
-footer .container2 {
-  display: flex;
-  flex-wrap: wrap;
+@media (min-width: 992px) {
+  footer .container2 {
+    display: flex;
+  }
 }
 footer .container2 .contact-footer {
   text-align: center;
