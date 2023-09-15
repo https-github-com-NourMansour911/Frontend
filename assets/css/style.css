@@ -612,6 +612,9 @@ footer .container2 .pages a {
   display: block;
   color: #525C60;
 }
+footer .container2 .pages a:hover {
+  color: var(--mainColor,#BB2525);
+}
 .copy .container2 {
   text-align: center;
   padding-top: 10px;
