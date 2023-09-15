@@ -109,6 +109,14 @@ section {
     width: auto;
   }
 }
+#header .container2 nav #sign {
+  display: block;
+}
+@media (min-width: 992px) {
+#header .container2 nav #sign {
+  display: none;
+}
+}
 #header .container2 nav a:first-of-type {
   margin-top: 25px;
 }
@@ -125,7 +133,16 @@ section {
   padding-bottom: 15px;
   color: #000;
   border-bottom: thin dotted var(--secondColor, #fff);
+  background-color: #c02d2d;
+}
+#header .container2 nav a:hover {
   background-color: var(--mainColor, #BB2525);
+}
+@media (min-width: 992px) {
+  #header .container2 nav a:hover {
+    background-color: #c02d2ddb;
+    color: #fff;
+  }
 }
 #header .container2 nav a:last-of-type {
   border-color: transparent;
@@ -158,8 +175,11 @@ section {
     display: block;
   }
 }
-#header .container2 .part3 > button:first-child {
+#header .container2 .part3  button {
   margin-right: 10px;
+}
+#header .container2 .part3 button a {
+  color: var(--secondColor, #fff);
 }
 #header .container2 #nav-lan {
   font-size: 9px;
