@@ -421,8 +421,8 @@ color: var(--secondColor,#fff);
     margin-right: auto;
   }
   #top-rated .container2 .box-card .moving-part {
-    -webkit-animation: slide-in 1s ease-in-out infinite alternate-reverse;
-    animation: slide-in 1s ease-in-out infinite alternate-reverse;
+    -webkit-animation: slide-in 2.5s ease-in-out infinite alternate-reverse;
+    animation: slide-in 2.5s ease-in-out infinite alternate-reverse;
 }
   #top-rated .container2 .box-card .moving-part ,
   #heroes-stories .container2 .box-card .moving-part {
@@ -515,8 +515,8 @@ color: var(--secondColor,#fff);
 }
 @media (min-width: 992px) {
 #heroes-stories .container2 .box-card .moving-part {
-  -webkit-animation: slide-in2 1s ease-in-out infinite alternate-reverse;
-  animation: slide-in2 1s ease-in-out infinite alternate-reverse;
+  -webkit-animation: slide-in2 3s ease-in-out infinite alternate-reverse;
+  animation: slide-in2 3s ease-in-out infinite alternate-reverse;
 }
 }
 /* ####################### start footer ####################### */
@@ -546,9 +546,13 @@ footer .container2 .contact-footer {
     margin: 0;
   }
 }
-footer .container2 span {
+footer .container2 span ,
+footer .container2 p a {
   display: block;
   color: #525C60;
+}
+footer .container2 p a:hover {
+  color: #0d6efd;;
 }
 footer .container2 .about-gem {
   text-align: center;
@@ -566,6 +570,7 @@ footer .container2 .about-gem .social i {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  cursor: pointer;
 }
 footer .container2 p {
   max-width: 543px;
