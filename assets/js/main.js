@@ -41,42 +41,42 @@ function handleAuthenticationSuccess() {
   window.location.href = 'https://https-github-com-nourmansour911.github.io/Frontend/'; // Replace '/dashboard' with your desired URL
 }
   //validation sign in
-  const anchor = document.createElement("a");
-  anchor.style.color = "white";
-  anchor.setAttribute("href","../../index.html");
-  console.log(anchor);
-  // Regular expression pattern for validating email addresses
-  signBtn.addEventListener('click', ()=> {
-  if(checkEmail() && checkPassword()){
-    anchor.click();
-  }
-});
-function checkEmail() {
-  const email = emailInput.value;
-  if(email){
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    // console.log(emailPattern.test(email))
-    if (emailPattern.test(email)) {
-      emailInput.style.border = '2px solid green';
-      return true;
-    } else {
-      emailInput.style.border = '2px solid red';
-    }
-  }else{
-    emailInput.style.border = '2px solid red';
-  }
-}
-function checkPassword() {
-  const pass = passwordInput.value;
-  const hasLetter = /[a-zA-Z0-9.-]/.test(pass);
-  if(pass){
-    if (hasLetter) {
-      passwordInput.style.border = '2px solid green';
-      return true;
-    } else {
-      passwordInput.style.border = '2px solid red';
-    }
-  }else {
-    passwordInput.style.border = '2px solid red';
-  }
-}
+//   const anchor = document.createElement("a");
+//   anchor.style.color = "white";
+//   anchor.setAttribute("href","../../index.html");
+//   console.log(anchor);
+//   // Regular expression pattern for validating email addresses
+//   signBtn.addEventListener('click', ()=> {
+//   if(checkEmail() && checkPassword()){
+//     anchor.click();
+//   }
+// });
+// function checkEmail() {
+//   const email = emailInput.value;
+//   if(email){
+//     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+//     // console.log(emailPattern.test(email))
+//     if (emailPattern.test(email)) {
+//       emailInput.style.border = '2px solid green';
+//       return true;
+//     } else {
+//       emailInput.style.border = '2px solid red';
+//     }
+//   }else{
+//     emailInput.style.border = '2px solid red';
+//   }
+// }
+// function checkPassword() {
+//   const pass = passwordInput.value;
+//   const hasLetter = /[a-zA-Z0-9.-]/.test(pass);
+//   if(pass){
+//     if (hasLetter) {
+//       passwordInput.style.border = '2px solid green';
+//       return true;
+//     } else {
+//       passwordInput.style.border = '2px solid red';
+//     }
+//   }else {
+//     passwordInput.style.border = '2px solid red';
+//   }
+// }
