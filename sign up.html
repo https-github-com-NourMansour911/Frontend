@@ -34,6 +34,30 @@
             <img src="assets/images/icons/eye.png" alt="password img" loading="lazy">
           </span>
         </div>
+        <div class="row g-3 mb-3">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Age" aria-label="Age">
+          </div>
+          <div class="col">
+            <select id="input-gender" class="form-select" placeholder="Gender" aria-label="Gender">
+              <option selected disabled>Gender</option>
+              <option>Female</option>
+              <option>Male</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <!-- lock icon -->
+          <span class="input-group-text" id="lock-icon">
+            <img src="assets/images/icons/password.png" alt="password img" loading="lazy">
+          </span>
+          <!-- input password -->
+          <input type="password" class="form-control" id="password-input" placeholder="Confirm Password" aria-label="Password">
+          <!-- eye icon -->
+          <span type="button" id="toggle-password" class="input-group-text">
+            <img src="assets/images/icons/eye.png" alt="password img" loading="lazy">
+          </span>
+        </div>
         <!-- remember-forget -->
         <div class="remember-forget mb-3">
           <!-- Remember me -->
@@ -52,8 +76,8 @@
           <span>Sign up with Google</span>
         </button>
         <div id="sign-in-text">
-          <span>Already have an account? Login</span>
-          <a href="sign in.html" class="red-text">Login Signup Here</a><br>
+          <span>Already have an account?</span>
+          <a href="sign in.html" class="red-text">Login</a><br>
         </div>
       </section>
     </div>

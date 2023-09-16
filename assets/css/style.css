@@ -856,9 +856,13 @@ footer .container2 .pages a:hover {
 /* ####################### start sign in ####################### */
 @media (min-width: 992px) {
   #sign-up {
-  background-image: url('../images/sign\ up.png');
+    background-image: url('../images/sign\ up.png');
   }
 }
+#sign-up #input-gender {
+  color: #75797D;
+}
+
 /* ####################### end sign up ####################### */
 
 /* a{
