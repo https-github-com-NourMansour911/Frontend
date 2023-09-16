@@ -764,15 +764,20 @@ form button[type="button"] {
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
+    height: 100vh;
   }
 }
 #sign-in .sign-in-form {
   width: 300px;
+  margin-right: auto;
+  margin-left: auto;
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #sign-in .sign-in-form {
-    width: 500px;
+    width: 450px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 #sign-in .sign-in-form #email-icon{
@@ -820,6 +825,9 @@ form button[type="button"] {
 }
 #sign-in .sign-in-form #loginButton span {
   margin-left: 5px;
+}
+#sign-in .sign-in-form #sign-up {
+  text-align: center;
 }
 #sign-in .sign-in-form .red-text {
   color: var(--mainColor);
