@@ -105,6 +105,7 @@ section {
 }
 #header .container2 nav {
   width: 100%;
+  z-index: 1000;
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -646,9 +647,6 @@ footer .container2 .pages a:hover {
   letter-spacing: 0em;
   text-align: center;
   text-transform: capitalize;
-}
-.form-floating {
-  z-index: -1;
 }
 .contact-us .form {
   width: Hug (1,131px);
