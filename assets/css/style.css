@@ -659,10 +659,10 @@ footer .container2 .pages a:hover {
   justify-items: center;
   align-content: center;
 }
-form input[type="text"],
-form input[type="email"],
-form input[type="phone number"],
-form textarea[type="text"]{
+.contact-us form input[type="text"],
+.contact-us form input[type="email"],
+.contact-us form input[type="phone number"],
+.contact-us form textarea[type="text"]{
   border: none;
   border-bottom:1px  solid;
   border-radius: 0%;
@@ -673,18 +673,18 @@ form textarea[type="text"]{
   text-align: left;
   margin-bottom: 15px;
 }
-form textarea[type="text"] {
+.contact-us form textarea[type="text"] {
   resize: none;
   margin-bottom: 35px;
 }
-form label[for="floatingName"] ,
-form label[for="floatingPhoneNumber"] ,
-form label[for="floatingEmail"] ,
-form label[for="floatingTextarea"] ,
-form button[type="button"] {
+.contact-us form label[for="floatingName"] ,
+.contact-us form label[for="floatingPhoneNumber"] ,
+.contact-us form label[for="floatingEmail"] ,
+.contact-us form label[for="floatingTextarea"] ,
+.contact-us form button[type="button"] {
   text-transform: capitalize;
 }
-form button[type="button"] {
+.contact-us form button[type="button"] {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -780,7 +780,7 @@ form button[type="button"] {
     margin-left: 0;
   }
 }
-#sign-in .sign-in-form #email-icon{
+#sign-in .sign-in-form #email-icon {
   background-color: var(--secondColor);
   border-right-color: transparent;
   color: #21252985;

@@ -15,37 +15,40 @@
     <header id="sign-in-header">
         <img src="assets/images/E-Gem logo.png" alt="E-Gem logo.png">
     </header>
+    
     <section class="sign-in-form">
-      <div class="input-group mb-3">
-        <!-- email icon -->
-        <span class="input-group-text" id="email-icon">@</span>
-        <input type="email" class="form-control" id="email-sign" placeholder="Email" style="border-left-color: transparent;" aria-label="Email" aria-describedby="addon-wrapping">
-      </div>
-      <!-- input-password -->
-      <div class="input-group mb-3">
-        <!-- lock icon -->
-        <span class="input-group-text" id="lock-icon">
-          <img src="assets/images/icons/password.png" alt="password img" loading="lazy">
-        </span>
-        <!-- input password -->
-        <input type="password" class="form-control" id="password-input" placeholder="Password" aria-label="Password">
-        <!-- eye icon -->
-        <span type="button" id="toggle-password" class="input-group-text">
-          <img src="assets/images/icons/eye.png" alt="password img" loading="lazy">
-        </span>
-      </div>
-      <!-- remember-forget -->
-      <div class="remember-forget mb-3">
-        <!-- Remember me -->
-        <div class="input-group">
-          <input class="form-check-input" type="checkbox" id="checkbox">
-          <label class="form-check-label" for="checkbox" id="checkbox-label">
-            Remember me
-          </label>
+      <form action="">
+        <div class="input-group mb-3">
+          <!-- email icon -->
+          <span class="input-group-text" id="email-icon">@</span>
+          <input type="email" class="form-control" id="email-sign" placeholder="Email" style="border-left-color: transparent;" aria-label="Email" aria-describedby="addon-wrapping">
         </div>
-        <span>Forget password ?</span>
-      </div>
-      <button id="sign-btn">Sign in</button>
+        <!-- input-password -->
+        <div class="input-group mb-3">
+          <!-- lock icon -->
+          <span class="input-group-text" id="lock-icon">
+            <img src="assets/images/icons/password.png" alt="password img" loading="lazy">
+          </span>
+          <!-- input password -->
+          <input type="password" class="form-control" id="password-input" placeholder="Password" aria-label="Password">
+          <!-- eye icon -->
+          <span type="button" id="toggle-password" class="input-group-text">
+            <img src="assets/images/icons/eye.png" alt="password img" loading="lazy">
+          </span>
+        </div>
+        <!-- remember-forget -->
+        <div class="remember-forget mb-3">
+          <!-- Remember me -->
+          <div class="input-group">
+            <input class="form-check-input" type="checkbox" id="checkbox">
+            <label class="form-check-label" for="checkbox" id="checkbox-label">
+              Remember me
+            </label>
+          </div>
+          <span>Forget password ?</span>
+        </div>
+        <button id="sign-btn">Sign in</button>
+      </form>
       <div class="mb-3 or">or</div>
       <button id="loginButton">
         <img src="assets/images/icons/icon-google.png" alt="icon-google">
