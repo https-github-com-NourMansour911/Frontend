@@ -13,69 +13,71 @@
   <section id="sign-up">
     <div class="container2">
       <header id="sign-up-header">
-          <img src="assets/images/E-Gem logo.png" alt="E-Gem logo.png">
+        <img src="assets/images/E-Gem logo.png" alt="E-Gem logo.png">
       </header>
       <section class="sign-up-form">
-        <div class="input-group mb-3">
-          <!-- email icon -->
-          <span class="input-group-text" id="email-icon">@</span>
-          <input type="email" class="form-control" id="email-sign" placeholder="Email" style="border-left-color: transparent;" aria-label="Email" aria-describedby="addon-wrapping">
-        </div>
-        <!-- input-password -->
-        <div class="input-group mb-3">
-          <!-- lock icon -->
-          <span class="input-group-text" id="lock-icon">
-            <img src="assets/images/icons/password.png" alt="password img" loading="lazy">
-          </span>
-          <!-- input password -->
-          <input type="password" class="form-control" onclick="showPassword ()" id="password-input" placeholder="Password" aria-label="Password">
-          <!-- eye icon -->
-          <span type="button" id="toggle-password" class="input-group-text">
-            <img src="assets/images/icons/eye.png" alt="password img" loading="lazy">
-          </span>
-        </div>
-        <div class="row g-3 mb-3">
-          <div class="input-group col">
+        <form action="">
+          <div class="input-group mb-3">
+            <!-- email icon -->
+            <span class="input-group-text" id="email-icon">@</span>
+            <input type="email" class="form-control" id="email-sign" placeholder="Email" style="border-left-color: transparent;" aria-label="Email" aria-describedby="addon-wrapping">
+          </div>
+          <!-- input-password -->
+          <div class="input-group mb-3">
+            <!-- lock icon -->
             <span class="input-group-text" id="lock-icon">
-              <img src="assets/images/icons/user.png" alt="user img" loading="lazy">
+              <img src="assets/images/icons/password.png" alt="password img" loading="lazy">
             </span>
-            <input type="text" class="form-control" placeholder="Age" aria-label="Age">
+            <!-- input password -->
+            <input type="password" class="form-control" onclick="showPassword ()" id="password-input" placeholder="Password" aria-label="Password">
+            <!-- eye icon -->
+            <span type="button" id="toggle-password" class="input-group-text">
+              <img src="assets/images/icons/eye.png" alt="password img" loading="lazy">
+            </span>
           </div>
-          <div class="input-group col">
+          <div class="row g-3 mb-3">
+            <div class="input-group col">
+              <span class="input-group-text" id="lock-icon">
+                <img src="assets/images/icons/user.png" alt="user img" loading="lazy">
+              </span>
+              <input type="text" class="form-control" placeholder="Age" aria-label="Age">
+            </div>
+            <div class="input-group col">
+              <span class="input-group-text" id="lock-icon">
+                <img src="assets/images/icons/user.png" alt="user img" loading="lazy">
+              </span>
+              <select id="input-gender" class="form-select" placeholder="Gender" aria-label="Gender">
+                <option selected disabled>Gender</option>
+                <option>Female</option>
+                <option>Male</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <!-- lock icon -->
             <span class="input-group-text" id="lock-icon">
-              <img src="assets/images/icons/user.png" alt="user img" loading="lazy">
+              <img src="assets/images/icons/password.png" alt="password img" loading="lazy">
             </span>
-            <select id="input-gender" class="form-select" placeholder="Gender" aria-label="Gender">
-              <option selected disabled>Gender</option>
-              <option>Female</option>
-              <option>Male</option>
-            </select>
+            <!-- input password -->
+            <input type="password" class="form-control" id="password-input2" placeholder="Confirm Password" aria-label="Password">
+            <!-- eye icon -->
+            <span type="button" id="toggle-password2" class="input-group-text">
+              <img src="assets/images/icons/eye.png" alt="password img" loading="lazy">
+            </span>
           </div>
-        </div>
-        <div class="input-group mb-3">
-          <!-- lock icon -->
-          <span class="input-group-text" id="lock-icon">
-            <img src="assets/images/icons/password.png" alt="password img" loading="lazy">
-          </span>
-          <!-- input password -->
-          <input type="password" class="form-control" id="password-input2" placeholder="Confirm Password" aria-label="Password">
-          <!-- eye icon -->
-          <span type="button" id="toggle-password2" class="input-group-text">
-            <img src="assets/images/icons/eye.png" alt="password img" loading="lazy">
-          </span>
-        </div>
-        <!-- remember-forget -->
-        <div class="remember-forget mb-3">
-          <!-- Remember me -->
-          <div class="input-group">
-            <input class="form-check-input" type="checkbox" id="checkbox">
-            <label class="form-check-label" for="checkbox" id="checkbox-label">
-              Remember me
-            </label>
+          <!-- remember-forget -->
+          <div class="remember-forget mb-3">
+            <!-- Remember me -->
+            <div class="input-group">
+              <input class="form-check-input" type="checkbox" id="checkbox">
+              <label class="form-check-label" for="checkbox" id="checkbox-label">
+                Remember me
+              </label>
+            </div>
+            <span>Forget password ?</span>
           </div>
-          <span>Forget password ?</span>
-        </div>
-        <button id="sign-btn">Sign up</button>
+          <button id="sign-btn">Sign up</button>
+        </form>
         <div class="mb-3 or">or</div>
         <button id="loginButton">
           <img src="assets/images/icons/icon-google.png" alt="icon-google">
