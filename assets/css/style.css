@@ -752,91 +752,114 @@ footer .container2 .pages a:hover {
   gap: 40px;
 }
 /* ####################### end payment ####################### */
-/* ####################### start sign ####################### */
-#sign-in {
+/* ####################### start sign in ####################### */
+#sign-in ,
+#sign-up {
   background-image: none;
   padding-top: 50px;
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #sign-in {
-    background-image: url('../images/sign\ in.png');
+  background-image: url('../images/sign\ in.png');
+  }
+  #sign-in ,
+  #sign-up {
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
     height: 100vh;
   }
 }
-#sign-in .sign-in-form {
+#sign-in .sign-in-form ,
+#sign-up .sign-up-form {
   width: 300px;
   margin-right: auto;
   margin-left: auto;
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  #sign-in .sign-in-form {
+  #sign-in .sign-in-form ,
+  #sign-up .sign-up-form {
     width: 450px;
     margin-right: 0;
     margin-left: 0;
   }
 }
-#sign-in .sign-in-form #email-icon {
+#sign-in .sign-in-form #email-icon ,
+#sign-up .sign-up-form #email-icon {
   background-color: var(--secondColor);
   border-right-color: transparent;
   color: #21252985;
 }
-#sign-in .sign-in-form #lock-icon {
+#sign-in .sign-in-form #lock-icon ,
+#sign-up .sign-up-form #lock-icon {
   background-color :var(--secondColor);
 }
-#sign-in .sign-in-form #password-input {
+#sign-in .sign-in-form #password-input ,
+#sign-up .sign-up-form #password-input {
   border-left: none;
   border-right: none;
 }
-#sign-in .sign-in-form #toggle-password {
+#sign-in .sign-in-form #toggle-password ,
+#sign-up .sign-up-form #toggle-password {
   background-color:var(--secondColor);
 }
-#sign-in .sign-in-form .remember-forget {
+#sign-in .sign-in-form .remember-forget ,
+#sign-up .sign-up-form .remember-forget {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 13px;
 }
-#sign-in .sign-in-form span {
+#sign-in .sign-in-form span ,
+#sign-up .sign-up-form span {
   white-space: nowrap;
 }
-#sign-in .sign-in-form #checkbox-label {
+#sign-in .sign-in-form #checkbox-label ,
+#sign-up .sign-up-form #checkbox-label {
   margin-left: 5px;
 }
-#sign-in .sign-in-form #sign-btn {
+#sign-in .sign-in-form #sign-btn ,
+#sign-up .sign-up-form #sign-btn {
   margin-bottom: 15px;
 }
-#sign-in .sign-in-form button {
+#sign-in .sign-in-form button ,
+#sign-up .sign-up-form button {
   width: 100%;
 }
-#sign-in .sign-in-form .or {
+#sign-in .sign-in-form .or ,
+#sign-up .sign-up-form .or {
   text-align: center;
   color: #848484;
 }
-#sign-in .sign-in-form #loginButton {
+#sign-in .sign-in-form #loginButton ,
+#sign-up .sign-up-form #loginButton {
   background-color: #EFEFEF;
   color: var(--mainColor);
   font-weight: bold;
   margin-bottom: 35px;
 }
-#sign-in .sign-in-form #loginButton span {
+#sign-in .sign-in-form #loginButton span ,
+#sign-up .sign-up-form #loginButton span {
   margin-left: 5px;
 }
-#sign-in .sign-in-form #sign-up {
+#sign-in .sign-in-form #sign-up-text ,
+#sign-up .sign-up-form #sign-in-text {
   text-align: center;
 }
-#sign-in .sign-in-form .red-text {
+#sign-in .sign-in-form .red-text ,
+#sign-up .sign-up-form .red-text {
   color: var(--mainColor);
 }
-
-
-
-
-/* ####################### end sign ####################### */
+/* ####################### end sign in ####################### */
+/* ####################### start sign in ####################### */
+@media (min-width: 992px) {
+  #sign-up {
+  background-image: url('../images/sign\ up.png');
+  }
+}
+/* ####################### end sign up ####################### */
 
 /* a{
   font-family: Open Sans;
