@@ -1,7 +1,9 @@
 const coachButtons = document.querySelectorAll(".btnCoach");
 const coachSection = document.getElementById('top-rated');
 const togglePassword = document.getElementById('toggle-password');
+const togglePassword2 = document.getElementById('toggle-password2');
 const passwordInput = document.getElementById('password-input');
+const passwordInput2 = document.getElementById('password-input2');
 const emailInput = document.getElementById('email-sign');
 const signBtn = document.getElementById("sign-btn");
 // Home page Coach buttons
@@ -16,6 +18,13 @@ togglePassword.addEventListener('click', ()=> {
     passwordInput.setAttribute("type", "text");
   } else {
     passwordInput.setAttribute("type", "password");
+  }
+});
+togglePassword2.addEventListener('click', ()=> {
+  if (passwordInput2.getAttribute("type") === "password") {
+    passwordInput2.setAttribute("type", "text");
+  } else {
+    passwordInput2.setAttribute("type", "password");
   }
 });
   //Auth0Lock

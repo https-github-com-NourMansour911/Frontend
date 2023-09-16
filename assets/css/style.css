@@ -797,12 +797,14 @@ footer .container2 .pages a:hover {
   background-color :var(--secondColor);
 }
 #sign-in .sign-in-form #password-input ,
-#sign-up .sign-up-form #password-input {
+#sign-up .sign-up-form #password-input ,
+#sign-up .sign-up-form #password-input2 {
   border-left: none;
   border-right: none;
 }
 #sign-in .sign-in-form #toggle-password ,
-#sign-up .sign-up-form #toggle-password {
+#sign-up .sign-up-form #toggle-password ,
+#sign-up .sign-up-form #toggle-password2 {
   background-color:var(--secondColor);
 }
 #sign-in .sign-in-form .remember-forget ,
