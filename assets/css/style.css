@@ -862,7 +862,10 @@ footer .container2 .pages a:hover {
 #sign-up #input-gender {
   color: #75797D;
 }
-
+#sign-up .sign-up-form .row .input-group input,
+#sign-up .sign-up-form .row .input-group select {
+  border-left: none;
+}
 /* ####################### end sign up ####################### */
 
 /* a{
